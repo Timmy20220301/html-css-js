@@ -1,0 +1,44 @@
+practice6-1
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <style>
+            .site{
+                display:grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                grid-template-rows: auto 1fr 3fr;
+                background-color: aquamarine;
+            }
+            .page-title{
+                grid-column: 1/2;
+                grid-row: 1/2;
+            }
+            .main{
+                grid-column: 1/2;
+                grid-row: 2/3;
+            }
+            .header{
+                grid-column: 2/4;
+                grid-row: 2/3;
+            }
+            .sidebar{
+                grid-column: 2/3;
+                grid-row: 3/4;
+            }
+            .footer{
+                grid-column: 3/4;
+                grid-row: 3/4;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="site">
+            <div class = "header" style = "background-color:aqua">.header</div>
+            <div class = "page-title" style = "background-color:brown">.page-title</div>
+            <div class = "main" style = "background-color:green">.main</div>
+            <div class = "sidebar" style = "background-color:yellow">.sidebar</div>
+            <div class = "footer" style = "background-color:palevioletred">.footer</div>
+        </div>
+    </body>
+</html>

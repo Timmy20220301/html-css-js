@@ -1,0 +1,19 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        
+    </head>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        let text = "Hello";
+        const myArray = text.split("");
+        text = "";
+        for(let i = 0; i<myArray.length; i++){
+            text += myArray[i] + "<br>";
+        }
+        document.getElementById('demo').innerHTML = text;
+    </script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+  
+<body> 
+    <center> 
+        <h1 style="color:green"> 
+          GeeksforGeeks 
+      </h1> 
+        <h2>HTML DOM onclick Event</h2> 
+        <p id="demo">Click me.</p> 
+  
+        <script> 
+            document.getElementById("demo").onclick = function() { 
+                GFGfun() 
+            }; 
+  
+            function GFGfun() { 
+                document.getElementById( 
+                  "demo").innerHTML = "YOU CLICKED ME!"; 
+            } 
+        </script> 
+    </center> 
+</body> 
+  
+</html>

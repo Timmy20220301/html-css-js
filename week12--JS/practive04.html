@@ -1,0 +1,43 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <style>
+            .red{
+                color: red;
+            }
+            .blue{
+                color: blue;
+            }
+            .green{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="font-size: 60px" >123</div>
+        <button onclick="change('red')">
+            紅色
+        </button>
+        <button onclick="change('blue')">
+            藍色
+        </button>
+        <button onclick="change('green')">
+            綠色
+        </button>
+    </body>
+    <script>
+        var text = document.getElementsByTagName("div")[0];
+        function change(a){
+            if(a == 'red'){
+                text.setAttribute("class","red");
+            }
+            else if(a == 'blue'){
+                text.setAttribute("class","blue");
+            }
+            else if(a == 'green'){
+                text.setAttribute("class","green");
+            }
+        }
+    </script>
+</html>

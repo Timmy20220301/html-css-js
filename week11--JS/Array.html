@@ -1,0 +1,32 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+    </body>
+    <script>
+        const fruits = ["Banna","Orange","Apple","Mango"];
+        document.getElementById('demo').innerHTML = fruits.toString();
+
+        let length = fruits.length;
+        document.getElementById("demo1").innerHTML = fruits;
+        document.getElementById("demo2").innerHTML = length;
+        fruits.sort();
+        document.getElementById("demo3").innerHTML = fruits;
+
+        fruits.reverse();
+        document.getElementById("demo4").innerHTML = fruits;
+
+        let text = fruits.join("+");
+
+        document.getElementById("demo5").innerHTML = text;
+    </script>
+</html>

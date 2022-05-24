@@ -1,0 +1,22 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        
+    </head>
+    <body>
+        <script>
+            const A = [[1,2],[3,4],[5,6,7]];
+            console.log(A.length);
+            console.log(A[0].length);
+            var p = 1;
+            for(let i = 0; i < A.length; i++){
+                for(let j = 0; j < A[i].length; j++){
+                    p *= A[i][j];
+                }
+            }
+            console.log(p);
+        </script>
+    </body>
+    
+</html>

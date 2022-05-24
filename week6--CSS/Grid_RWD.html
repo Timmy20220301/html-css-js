@@ -1,0 +1,54 @@
+Grid_RWD
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <style>
+            .site{
+                display: grid;
+                grid-template-columns: 2fr 1fr 1fr;
+                grid-template-rows: auto 1fr 3fr;
+                grid-template-areas:
+                "title title title"
+                "main header header"
+                "main sidebar footer";
+            }
+            .header{
+                grid-area : header;
+            }
+            .page-title{
+                grid-area : title;
+            }
+            .main{
+                grid-area: main;
+            }
+            .sidebar{
+                grid-area: sidebar;
+            }
+            .footer{
+                grid-area: footer;
+            }
+            
+            @media screen and (max-width: 500px){ /*放大後轉換*/
+                .site{
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "header"
+                    "title"
+                    "main"
+                    "sidebar"
+                    "footer";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="site">
+            <div class = "header" style = "background-color:aqua">.header</div>
+            <div class = "page-title" style = "background-color:brown">.page-title</div>
+            <div class = "main" style = "background-color:green">.main</div>
+            <div class = "sidebar" style = "background-color:yellow">.sidebar</div>
+            <div class = "footer" style = "background-color:palevioletred">.footer</div>
+        </div>
+    </body>
+</html>

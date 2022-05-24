@@ -1,0 +1,19 @@
+#header{
+    color: black;
+    background-color: aquamarine;
+    padding: 20px;
+    margin: 20px;
+}
+#content{
+    color: black;
+}
+#btn{
+    color: black;
+}
+#list{
+    color: black;
+}
+.article{
+    background-color: aqua;
+}
+

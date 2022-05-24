@@ -1,0 +1,60 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <style>
+            table
+            {
+                border-style: none;
+                border-collapse:collapse;
+            }
+            tr
+            {
+                background-color: lightgray;
+            }
+            tr:nth-child(3n+1)
+            {
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <table border="1" style="">
+            <tbody>
+                <tr><!--tr的r是row-->
+                    <th colspan="3"></th><!--th代表置中-->
+                </tr>
+                <tr>
+                    <td> </td><!--td代表靠左-->
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <td> </td><!--td代表靠左-->
+                    <td> </td>
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th colspan="3"></th><!--td代表靠左-->
+                </tr>
+                <tr>
+                    <td> </td><!--td代表靠左-->
+                    <td> </td>
+                    <td rowspan="2"style="background-color: blue"></td>
+                </tr>
+                <tr>
+                    <td> </td><!--td代表靠左-->
+                    <td> </td>
+                </tr>
+                <tr>
+                    <th colspan="3"></th><!--td代表靠左-->
+                </tr>
+                <tr>
+                    <th colspan="2" style="background-color: lightgreen"></th><!--td代表靠左-->
+                    <td> </td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
+        

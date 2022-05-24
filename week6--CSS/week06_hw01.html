@@ -1,0 +1,100 @@
+week06_hw01
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <style>
+            .site{
+                display: grid;
+                grid-template-columns: 1fr 3fr 1fr;
+                grid-template-rows: auto auto auto auto;
+                grid-template-areas:
+                "head head head"
+                "nav1 article aside"
+                "nav2 article aside"
+                "nav3 article aside"
+                "footer footer footer";
+                border-style: solid;
+                text-align: center;
+            }
+            .head{
+                grid-area : head;
+                border-style: solid;
+                margin: 2px;
+            }
+            .nav1{
+                grid-area : nav1;
+                border-style: solid;
+                margin: 2px;
+            }
+            .nav2{
+                grid-area : nav2;
+                border-style: solid;
+                margin: 2px;
+            }
+            .nav3{
+                grid-area : nav3;
+                border-style: solid;
+                margin: 2px;
+            }
+            .article{
+                grid-area : article;
+                border-style: solid;
+                margin: 2px;
+            }
+            .aside{
+                grid-area: aside;
+                border-style: solid;
+                margin: 2px;
+            }
+            .footer{
+                grid-area: footer;
+                border-style: solid;
+                margin: 2px;
+            }
+            
+            @media screen and (max-width: 620px){ /*放大後轉換*/
+                .site{
+                    grid-template-columns: 1fr;
+                    grid-template-areas:
+                    "head"
+                    "nav1"
+                    "nav2"
+                    "nav3"
+                    "article"
+                    "aside"
+                    "footer";
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="site">
+            <div class = "head" style = "background-color:aqua">
+                <h1>head</h1>
+                <p>hey im tim</p>
+            </div>
+            <div class = "nav1" style = "background-color:green">
+                <a href="https://www.tku.edu.tw/" target="_blank">TKU</a>
+            </div>
+            <div class = "nav2" style = "background-color:rgb(25, 107, 50)">
+                <a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ" target="_blank">America President</a>
+            </div>
+            <div class = "nav3" style = "background-color:rgb(11, 126, 26)">
+                <a href="https://www.youtube.com/watch?v=5qap5aO4i9A" target="_blank">lofi</a>
+            </div>
+            <div class = "article" style = "background-color:brown">
+                <h1>article</h1>
+                <p>very god in Egish</p>
+            </div>
+            <div class = "aside" style = "background-color:yellow">
+                <h1>aside</h1>
+                <p>ated aple eve days</p>
+            </div>
+            <div class = "footer" style = "background-color:palevioletred">
+                <h1>footer</h1>
+                <p>very beautiful, very powerful</p>
+            </div>
+        </div>
+    </body>
+</html>

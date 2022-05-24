@@ -1,0 +1,21 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        
+    </head>
+    <body>
+        <p id="demo"></p>
+    </body>
+    <script>
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            id: 1234,
+            fullName: function(){
+                return this.firstName + "" + this.lastName;
+            }
+        };
+        document.getElementById("demo").innerHTML = person.fullName();
+    </script>
+</html>

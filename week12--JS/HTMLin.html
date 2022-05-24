@@ -1,0 +1,22 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        
+    </head>
+    <body>
+        <div id="one">1</div>
+        <div id="777">7</div>
+    </body>
+    <script>
+        var d1 = document.getElementById('one');
+        d1.insertAdjacentHTML('afterend','<div>2</div>');
+        // 建立html標籤
+        var a = document.createElement('tr');
+        //設定屬性
+        a.setAttribute("id","abc");
+        //移除html
+        let seven = document.getElementById("777");
+        seven.remove();
+    </script>
+</html>

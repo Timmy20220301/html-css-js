@@ -1,0 +1,199 @@
+week06_hw01
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <style>
+            .site{
+                display: grid;
+                grid-template-columns:auto;
+                grid-template-rows:auto;
+                grid-template-areas:
+                "header"
+                "nav"
+                "main"
+                "footer";
+                border-style: solid;
+                text-align: center;
+            }
+            .header{
+                grid-area : header;
+                border-style: solid;
+                margin: 2px;
+            }
+            .nav{
+                grid-area : nav;
+                border-style: solid;
+                margin: 2px;
+            }
+            .main{
+                grid-area : main;
+                border-style: solid;
+                margin: 2px;
+            }
+            .footer{
+                grid-area: footer;
+                border-style: solid;
+                margin: 2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class ="site">
+            <div class = "header" id="header" style = "background-color:rgb(160, 171, 237)">
+                <h1>米津玄師</h1>
+                <h2>感電</h2>
+            </div>
+            <div class = "nav" style = "background-color:rgb(85, 104, 184)">
+                <h1>上一首歌</h1>
+                <a href="D:\程式語言\HTML_CSS_JS\week7--CSS\hw1_1.html" target="_blank">米津玄師 MV「感電」</a>
+            </div>
+            <div class = "main" style = "background-color:rgb(160, 171, 237)">
+                <h1>article</h1>
+                <p>
+                    逃げ出したい夜の往来　行方は未だ不明<br>
+                    好想逃走在夜的大街上　下落依舊不明<br><br>
+
+                    回り回って虚しくって　困っちゃったワンワンワン<br>
+                    兜來轉去空虛起來　真是困擾啊汪汪汪<br><br>
+
+                    失ったつもりもないが　何か足りない気分<br>
+                    沒打算弄丟　卻感到缺少了些什麼<br><br>
+
+                    ちょっと変にハイになって　吹かし込んだ四輪車<br>
+                    有些奇怪地嗨了起來　在引擎空轉的汽車裡<br><br>
+
+                    兄弟よ如何かしよう　もう何も考えない様<br>
+                    兄弟啊　做些什麼吧　別再多想<br><br>
+
+                    銀河系の外れへと　さようなら<br>
+                    現在向銀河系的盡頭　道聲再見<br><br>
+
+                    真実も　道徳も　動作しないイカれた夜でも<br>
+                    即使在真實　和道德　都不運作的瘋狂夜晚<br><br>
+
+                    僕ら手を叩いて笑い合う<br>
+                    我們也拍著手相視而笑<br><br>
+
+                    誰にも知られないまま<br>
+                    沒有任何人發現<br><br>
+
+                    たった一瞬の　このきらめきを<br>
+                    僅此一瞬的　這道耀眼<br><br>
+
+                    食べ尽くそう二人で　くたばるまで<br>
+                    讓我們全數吞下　直到兩人筋疲力竭<br><br>
+
+                    そして幸運を　僕らに祈りを<br>
+                    接著便祝我們好運<br><br>
+
+                    まだ行こう　誰も追いつけない　くらいのスピードで<br>
+                    再次用誰也追不上的速度向前<br><br>
+
+                    稲妻の様に生きていたいだけ<br>
+                    只是想活得像一道閃電<br><br>
+
+                    お前はどうしたい？　返事はいらない<br>
+                    你想怎麼做？　不需要回答<br><br>
+
+                    転がした車窓と情景　動機は未だ不明<br>
+                    滾動的車窗和情景　動機依舊不明<br><br>
+
+                    邪魔臭くて苛ついて　迷い込んだニャンニャンニャン<br>
+                    真是麻煩令人焦躁　誤入迷途啦喵喵喵<br><br>
+
+                    ここいらで落とした財布　誰か見ませんでした？<br>
+                    掉在這裡的錢包　有沒有誰看見？<br><br>
+
+                    馬鹿みたいについてないね　茶化してくれハイウェイ・スター<br>
+                    運氣糟得像個笨蛋　挖苦我吧公路之星<br><br>
+
+                    よう相棒　もう一丁　漫画みたいな喧嘩しようよ<br>
+                    嘿搭擋　再來啊　讓我們像漫畫那樣爭吵<br><br>
+
+                    酒落になんないくらいのやつを　お試しで<br>
+                    試試那些　不能亂開玩笑的事兒<br><br>
+
+                    正論と　暴論の　分類さえ出来やしない街を<br>
+                    就從這連確論　或謬論　都無法分辨的城市<br><br>
+
+                    抜け出して互いに笑い合う<br>
+                    逃出去吧相視而笑的我們<br><br>
+
+                    目指すのは　メロウなエンディング<br>
+                    目標是　熟甜完滿的劇終<br><br>
+
+                    それは心臓を　刹那に揺らすもの<br>
+                    那是在剎那間　撼動心臟的東西<br><br>
+
+                    追いかけた途端に　見失っちゃうの<br>
+                    卻是一追上去　就會追丟<br><br>
+
+                    きっと永遠が　どっかにあるんだと<br>
+                    但一定在某處　有著所謂的永遠<br><br>
+
+                    明後日を　探し回るのも　悪くはないでしょう<br>
+                    那麼就後日　再到處去找找也不壞吧<br><br>
+
+                    お前がどっかに消えた朝より<br>
+                    比起你突然從哪消失的早晨<br><br>
+
+                    こんな夜の方が　まだましさ<br>
+                    我更寧願選擇這樣的夜晚<br><br>
+
+                    肺に睡蓮　遠くのサイレン<br>
+                    肺生睡蓮　遠處警報<br><br>
+
+                    響き合う境界線<br>
+                    共鳴的邊界<br><br>
+
+                    愛し合う様に　喧嘩しようぜ<br>
+                    讓我們如彼此相愛般的　來吵架吧<br><br>
+
+                    遣る瀬無さ引っさげて<br>
+                    強使鬱悶不樂的心情<br><br>
+
+                    たった一瞬の　このきらめきを<br>
+                    僅此一瞬的　這道耀眼<br><br>
+
+                    食べ尽くそう二人で　くたばるまで<br>
+                    讓我們全數吞下　直到兩人筋疲力竭<br><br>
+
+                    そして幸運を　僕らに祈りを<br>
+                    接著便祝我們好運<br><br>
+
+                    まだ行こう　誰も追いつけない　くらいのスピードで<br>
+                    再次用誰也追不上的速度向前<br><br>
+
+                    それは心臓を　刹那に揺らすもの<br>
+                    那是在剎那間　撼動心臟的東西<br><br>
+
+                    追いかけた途端に　見失っちゃうの<br>
+                    卻是一追上去　就會追丟<br><br>
+
+                    きっと永遠が　どっかにあるんだと<br>
+                    但一定在某處　有著所謂的永遠<br><br>
+
+                    明後日を　探し回るのも　悪くはないでしょう<br>
+                    那麼就後日　再到處去找找也不壞吧<br><br>
+
+                    稲妻の様に生きていたいだけ<br>
+                    只是想活得像一道閃電<br><br>
+
+                    お前はどうしたい？　返事はいらない<br>
+                    你想怎麼做？　不需要回答<br><br>
+                </p>
+                <a href="https://www.youtube.com/watch?v=dfOsUNxc2Xg" target="_blank">SawanoHiroyuki[nZk]:Honoka Takahashi『LilaS』</a>
+                <a href="#header">JUMP TO TITLE</a>
+            </div>
+            <div class = "footer" style = "background-color:rgb(0, 0, 0);color: aliceblue;">
+                <h1>footer</h1>
+                <p>『LilaS』<br>
+                    SawanoHiroyuki[nZk]:Honoka Takahashi<br>
+                    Lyrics:Honoka Takahashi（リーガルリリー）<br>
+                    Music：Hiroyuki SAWANO
+                </p>
+            </div>
+        </div>
+    </body>
+</html>

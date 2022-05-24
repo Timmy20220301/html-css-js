@@ -1,0 +1,35 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <style>
+            div.a{
+                width:150px;
+                height: 80px;
+                background-color: yellow;
+                transform: rotate(20deg);
+                transform-origin: 20% 40%;/*改變旋轉軸點*/
+            }
+            div.b{
+                width:150px;
+                height: 80px;
+                background-color: yellow;
+                transform: skewY(20deg);/*改變歪斜角度*/
+            }
+            div.c{
+                width:150px;
+                height: 80px;
+                background-color: yellow;
+                transform: scaleY(1.5);/*改變區塊大小*/
+            }
+        </style>
+    </head>
+    <body>
+        <h2>transform: rotate(20deg)</h2>
+        <div class="a">Hello World</div><br>
+        <h2>transform: skewY(20deg)</h2>
+        <div class="b">Hello World</div><br>
+        <h2>transform: scaleY(1.5)</h2>
+        <div class="c">Hello World</div><br>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+    </body>
+    <script>
+        const fruits = ["Banna","Orange","Apple","Mango"];
+        document.getElementById('demo').innerHTML = fruits.toString();
+
+        fruits.pop();
+        document.getElementById("demo1").innerHTML = fruits;
+
+        document.getElementById("demo2").innerHTML = fruits.pop();
+
+        fruits.pop();
+        document.getElementById("demo3").innerHTML = fruits;
+    </script>
+</html>

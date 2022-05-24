@@ -1,0 +1,33 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        
+    </head>
+    <body>
+        <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+        <p id="demo4"></p>
+        <p id="demo5"></p>
+    </body>
+    <script>
+        const fruits = ["Banna","Orange","Apple","Mango"];
+        document.getElementById('demo').innerHTML = fruits;
+
+        fruits.splice(2,0,"Lemon","Kiwi");
+        document.getElementById("demo1").innerHTML = fruits;
+
+        document.getElementById("demo2").innerHTML = "Original Array:<br>" + fruits;
+
+        let removed = fruits.splice(2,2,"Lemon", "Kiwi");
+
+        document.getElementById("demo3").innerHTML = "New Array:<br>" + fruits;
+
+        document.getElementById("demo4").innerHTML = "Removed items:<br>" + removed;
+
+        fruits.splice(0,1);
+        document.getElementById("demo5").innerHTML =fruits ;
+    </script>
+</html>

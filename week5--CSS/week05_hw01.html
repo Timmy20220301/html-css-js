@@ -1,0 +1,97 @@
+<!--HTML5-->
+<!Doctype html>
+<html lang = "zh-tw">
+    <head>
+        <meta name="viewport" content="widht=device-width, initial-scale=1.0"><!--?-->
+        <style>
+            *{
+                box-sizing: border-box;/*固定邊界大小*/
+            }
+            body{
+                font-family: Verdana;/*字形設定*/
+            }
+            .menu{
+                float: left;
+                width: 20%;
+                text-align: center;
+                height: 200px;
+            }
+            .manu a{
+                background-color: #96ceb4;
+                padding: 10px;
+                border: solid white 5px;
+                display: block;
+                width: 100%;
+                color: black;
+                text-decoration: none;
+            }
+            .main{
+                float: left;
+                width: 60%;
+                padding: 0 20px;
+                height: 200px;
+                text-decoration: none;
+                background-color: #ff6f69;
+                border: solid white 5px;
+            }
+            .right{
+                float: left;
+                width: 20%;
+                padding: 15px;
+                height: 200px;
+                background-color: #f7b382;
+                border: solid white 5px;
+                text-align: center;
+            }
+            header{
+                padding: 15px;
+                text-align: center;
+                background-color: #88a6b0;
+            }
+            footer{
+                float: left;
+                width: 100%;
+                background-color: #e5e5e5;
+                text-align: center;
+                padding: 10px;
+                margin-top: 7px;
+            }
+            
+            @media only screen and (max-width: 620px){
+                .menu,.main,.right{max-width: 100%;}
+            }
+        </style>
+    </head>
+    <body>
+        <h2>CSS Layout Flexbox</h2>
+        <p>123</p>
+        
+        <header>
+            <h2>標題</h2>
+            <p>123</p>
+        </header>
+        
+        <nav>
+            <h2>頁內導覽</h2>
+            <a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ/featured" target="_blank"> かわいいウサギ！</a>
+            <a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ/featured" target="_blank"> かわいいウサギ！</a>
+            <a href="https://www.youtube.com/channel/UC1DCedRgGHBdm81E1llLhOQ/featured" target="_blank"> かわいいウサギ！</a>
+        </nav>
+        
+        <section>
+            <h2>章節</h2>
+        </section>
+        
+        <article>
+            <h2>內文</h2>
+        </article>
+        
+        <section>
+            <h2>側邊欄</h2>
+        </section>
+        
+        <footer>
+            <h2>結尾</h2>
+        </footer>
+    </body>
+</html>
